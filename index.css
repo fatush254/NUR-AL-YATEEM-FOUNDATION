@@ -146,6 +146,7 @@ footer {
       height: 100%;
       position: absolute;
       width: 300%;
+      padding-right: 400px;
     }
     
     .card .back {
