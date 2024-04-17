@@ -84,7 +84,7 @@ footer {
     height: auto;
     border-radius: 50%; 
 }
-.image-container {
+  .image-container {
     position: relative;
     }
     
@@ -121,7 +121,7 @@ footer {
     }
     
     .card {
-      height: 100%;
+      height: 50%;
       position: relative; /* Changed from absolute */
       transform-style: preserve-3d;
       transition: all 1s ease-in-out;
@@ -137,7 +137,7 @@ footer {
     }
     
     .card .side img, .card .side.back img {
-      max-width: 80%; /* Limit image width */
+      max-width: 100%; /* Limit image width */
       height: auto; /* Maintain aspect ratio */
     }
     
@@ -145,10 +145,13 @@ footer {
       backface-visibility: hidden;
       height: 100%;
       position: absolute;
-      width: 100%;
+      width: 300%;
     }
     
     .card .back {
       
       transform: rotateY(180deg);
+    }
+    #About Us{padding-top: 500px;
+
     }
