@@ -84,3 +84,71 @@ footer {
     height: auto;
     border-radius: 50%; 
 }
+.image-container {
+    position: relative;
+    }
+    
+    .thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+    
+    .thumbnail {
+    width: 200px;
+    height: 200px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    }
+    
+    .thumbnail:hover {
+    transform: scale(1.3);
+    }
+    
+    .card-container {
+      display: flex; /* Display cards in a row */
+      justify-content: space-between; /* Space evenly between cards */
+      height: 30px;
+      perspective: 200px; /* Added 'px' for perspective */
+      position: relative;
+      width: 300px; /* Double the width for two columns */
+      padding-left: 600px;
+    }
+    
+    .row {
+      flex: 3; /* Each row takes equal space */
+    }
+    
+    .card {
+      height: 100%;
+      position: relative; /* Changed from absolute */
+      transform-style: preserve-3d;
+      transition: all 1s ease-in-out;
+      width: calc(50% - 5px); /* Adjusted width for two columns with spacing */
+      margin-right: 20px; /* Added spacing between cards */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+    
+    .card .side img, .card .side.back img {
+      max-width: 80%; /* Limit image width */
+      height: auto; /* Maintain aspect ratio */
+    }
+    
+    .card .side {
+      backface-visibility: hidden;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+    
+    .card .back {
+      
+      transform: rotateY(180deg);
+    }
